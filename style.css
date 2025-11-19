@@ -1,0 +1,114 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body style */
+body {
+    font-family: Arial, sans-serif;
+    background: #e7f1ff;
+    color: #1a1a1a;
+    padding: 10px;
+}
+
+/* Header */
+header {
+    background: #2a4d7a;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #dbe8ff;
+    text-decoration: none;
+}
+
+/* Main container */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Section titles */
+h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* About section */
+#about {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 0;   /* removes the circle */
+}
+
+/* Projects — NO BOXES, JUST SIMPLE TEXT */
+#projects {
+    padding: 10px;
+    text-align: center;
+}
+
+.project-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.project-list li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+/* Contact Form (kept simple but clean) */
+#contact {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #9fbce5;
+    background: #f7faff;
+}
+
+button {
+    padding: 8px;
+    background: #2a4d7a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #2a4d7a;
+}
