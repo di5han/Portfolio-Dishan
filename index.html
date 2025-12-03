@@ -8,67 +8,70 @@
 </head>
 <body>
 
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<header id="hero">
+    <video autoplay loop muted id="video-background">
+        <source src="Videos/14551290_3840_2160_50fps.mp4" type="video/mp4">
+    </video>
 
-    <video autoplay loop muted id="video-background"width=100% height=50%>
-  <source src="Videos/14551290_3840_2160_50fps.mp4" type="video/mp4">
-  </video>
+    <nav class="navbar">
+        <h1 class="logo">My Portfolio</h1>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="menu-button" class="menu-toggle">☰</button>
+    </nav>
 
-    </header>
+    <div class="hero-content">
+        <h2>Dishan Adhikari</h2>
+        <p>Frontend Developer</p>
+    </div>
+</header>
 
- <main>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
+<main>
 
-            <img src="Images/default-avatar.webp" alt="Profile Picture" class="profile-img">
+<section id="about">
+    <h2>About Me</h2>
+    <img src="Images/default-avatar.webp" class="profile-img" alt="">
+    <p>Hello! I am Dishan and this is my simple portfolio.</p>
+</section>
 
-            <p>Hello! I am Dishan and this is my simple portfolio.</p>
 
-        </section>
+<section id="projects">
+    <h2>Projects</h2>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul class="project-list">
-                <li>Weather Web Application</li>
-                <li>Simple Bank Application</li>
-                <li>Traffic Car Racing Game</li>
-            </ul>
-        </section>
+    <div id="projects-grid">
+        <div class="project-card">Weather Web App</div>
+        <div class="project-card">Simple Bank App</div>
+        <div class="project-card">Car Racing Game</div>
+    </div>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
+</section>
 
-            <form>
-                <label for="name">Name</label>
-                <input id="name" type="text" required>
 
-                <label for="email">Email</label>
-                <input id="email" type="email" required>
+<section id="contact">
+    <h2>Contact</h2>
 
-                <label for="message">Message</label>
-                <textarea id="message" required></textarea>
+    <form id="contact-form">
+        <input id="name" type="text" placeholder="Name" required>
+        <input id="email" type="email" placeholder="Email" required>
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
 
-                <button type="submit">Send</button>
-            </form>
-        </section>
+    <p id="form-message"></p>
+</section>
 
-    </main>
+</main>
 
-    <footer>
-        <p>© 2025 My Portfolio</p>
-    </footer>
+
+<footer>
+    <p>© 2025 My Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
