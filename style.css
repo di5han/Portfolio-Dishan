@@ -1,3 +1,4 @@
+/*CSS*/
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +42,6 @@ body {
     gap: 10px;
 }
 
-/* 👇 Add this code here */
 .nav-links.open {
     display: flex;
 }

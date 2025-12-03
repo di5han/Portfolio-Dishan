@@ -1,3 +1,4 @@
+//JS
 const menuBtn = document.getElementById("menu-button");
 const navLinks = document.querySelector(".nav-links");
 
